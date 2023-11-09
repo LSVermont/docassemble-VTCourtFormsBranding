@@ -54,7 +54,7 @@ setup(name='docassemble.VTCourtFormsBranding',
       url='https://docassemble.org',
       packages=find_packages(),
       namespace_packages=['docassemble'],
-      install_requires=[],
+      install_requires=['docassemble.AssemblyLine>=2.26.0'],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/VTCourtFormsBranding/', package='docassemble.VTCourtFormsBranding'),
      )
