@@ -1,24 +1,9 @@
----
-code: |
-  AL_ORGANIZATION_TITLE = "VTCourtForms"
----
-code: |
-  AL_ORGANIZATION_HOMEPAGE = "https://vtlawhelp.org/vtcourtforms"
----
-objects:
-  - al_logo: DAStaticFile.using(filename="LSV_bug.png")
----
-images:
-  big_logo: LSV_logo.png 
+#This package has lots of logo and favicon files as well as vermont.css which is the same as style.css as of 8.6.24. See the Static files folder.
+
+#This package is currently used as the Global CSS for VTCourtForms in the configuration settings
+
+#I don't know if we need this code below.
 ---
 code: |
   interview_metadata['main_interview_key'] =  'RFApackage'
----
-code: |
-  # This controls the default country and list of states in address field questions
-  AL_DEFAULT_COUNTRY = "US"
----
-code: |
-  # This controls the default state in address field questions
-  AL_DEFAULT_STATE = "VT"
 ---

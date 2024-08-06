@@ -44,17 +44,17 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.VTCourtFormsBranding',
-      version='0.0.1',
+      version='0.0.2',
       description=('A docassemble extension.'),
       long_description='# docassemble.VTCourtFormsBranding\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nKris Surette, ksurette@lawlinevt.org\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Kris Surette',
-      author_email='ksurette@lawlinevt.org',
+      author_email='ksurette@legalservicesvt.org',
       license='The MIT License (MIT)',
       url='https://docassemble.org',
       packages=find_packages(),
       namespace_packages=['docassemble'],
-      install_requires=['docassemble.AssemblyLine>=2.26.0'],
+      install_requires=['docassemble.AssemblyLine>=3.0.1'],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/VTCourtFormsBranding/', package='docassemble.VTCourtFormsBranding'),
      )
