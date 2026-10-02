@@ -1,9 +1,9 @@
-/* This code is the same as style.css as of 8.6.24 */
+/* This code is the same as VTSharedYMLFile: style.css as of 10.2.2026 */
 
-
-/* This below is to make color contrast more accessible on 8.6.24 */
+/* This below is to make color contrast more accessible and increase font size in footer */
 .dafooter a {
     color: #0256D4;
+    font-size: 1rem;
 }
 
 .nav-link.dropdown-toggle:hover, nav-link.dropdown-toggle:visited {
@@ -14,10 +14,9 @@
     color: #F0F0F0;
 }
 
-.da-form-group.darequired .da-form-label:after {
-    position: absolute;
-    content: '*';
-    color: #e11717;
+.da-form-group.darequired .da-form-label > .darequiredmarker {
+  position: absolute;
+  color: #e11717;
 }
 
 .labelauty-unchecked a {
@@ -28,9 +27,6 @@
     color: #ffffff;
 }
 
-.card.card-body.pb-1.bg-light a {
-    color: #0256D4;
-}
 
 
 /* This below is just for the VTCourtFormsRootPage */
@@ -43,6 +39,30 @@
 .btn-da-custom svg { 
   height: 2.5em !important;
 }
+.btn-light {
+    --bs-btn-color: #21455b !important;
+    --bs-btn-bg: #eff6fb !important;
+}
+
+
+/* This below is used to have good contrast with dropdown panels of info text inside questions */
+.al_display_template .scrollable-panel.card.card-body.bg-light.pb-1 {
+    background-color: #f2f2f3 !important;
+    color: #000 !important;
+}
+
+.labelauty-unchecked .al_display_template a.al_toggle {
+    color: #2e4362 !important;
+    margin:.3rem 0;
+}
+
+.labelauty-checked .al_display_template a.al_toggle {
+    color: #ffffff !important;
+    margin:.3rem 0;
+}
+
+
+
 /* This below is used to indent "show if" subquestions on certain pages */
 .indent-me-container {
     background-color: #fff;
@@ -135,5 +155,3 @@ input.labelauty+label,
 .nav-pills .nav-link {
     color: #797575;
 }
-
-
